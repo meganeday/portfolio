@@ -1,10 +1,26 @@
 /*================================= body styles =================================*/
 body {
-    background-image: url("images/phone-home-background.svg");
+    background-image: url("images/mobile-backgrounds/1.svg");
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: 'Playfair Display', serif;
     overflow: hidden;
+}
+
+/*================================= nav bar ====================================== */
+
+nav {
+  background-image: url("images/menu-button.png");
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+nav a {
+  display: none;
 }
 
 /*================================= header styles =================================*/
@@ -12,25 +28,38 @@ body {
 
 /*================================= main styles =================================*/
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: column;
+  height: 60vh;
+  margin-top: 19vh;
+}
+
 h1 {
-    text-align: center;
-    width: 70vw;
-    margin: 19vh auto 0;
-    font-size: 23pt;
-    letter-spacing: .2vw;
-    font-weight: 700;
+  text-align: center;
+  width: 80vw;
+  font-size: 20pt;
+  letter-spacing: .2vw;
+  font-weight: 700;
+  margin: 0;
 }
 
 h2 {
-    color: #49ACB7;
-    font-weight: 400;
-    text-align: center;
-    width: 60vw;
-    margin: 1vh auto;
-    font-size: 14pt;
+  color: #49ACB7;
+  font-weight: 400;
+  text-align: center;
+  width: 60vw;
+  font-size: 14pt;
+  margin: 0;
+  line-height: 5vh;
 }
 
-
+img.home {
+  width: 75%;
+  justify-self: center;
+}
 /*================================= footer styles =================================*/
 footer {
     width: 100%;
@@ -57,33 +86,30 @@ footer {
   
   a.social {
     display: inline-block;
-    text-indent: -9999px;
-    margin-left: 5px;
-    width: 25px;
-    height: 25px;
-    background-size: 25px 25px;
+    margin: 2px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
     transition: all .5s;
+    opacity: 100%;
   }
   a#twitter {
-    background-image: url(images/logos/twitter-logo.png);
+    background-image: url(images/social/twitter.png);
   }
   a#linkedin {
-    background-image: url(images/logos/linkedin-logo.png);
+    background-image: url(images/social/linkedin.png);
   }
   a#github {
-    background-image: url(images/logos/github-logo.png);
+    background-image: url(images/social/github.png);
   }
   a#email {
-    background-image: url(images/logos/email-logo.png);
+    background-image: url(images/social/email.png);
   }
   a#medium {
-    background-image: url(images/logos/medium-logo.png);
+    background-image: url(images/social/medium.png);
   }
   
-  .clearfix {
-    clear: both;
-  }
-  
+
 /*================================= tablet breakpoint =================================*/
 
 @media screen and (min-width: 720px) {
@@ -96,10 +122,10 @@ footer {
 @media screen and (min-width: 720px) {
     
     a.social {
-        opacity: .4;
+        opacity: 100%;
     }
 
     a.social:hover {
-        opacity: 1;
+        opacity: 70%;
     }
 }
