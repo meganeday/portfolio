@@ -1,10 +1,13 @@
 /*================================= body styles =================================*/
 body {
-    background-image: url("images/mobile-backgrounds/1.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
     font-family: 'Playfair Display', serif;
-    overflow: hidden;
+}
+
+img#home-plant {
+  position: absolute;
+  height: 180px;
+  left: -15px;
+  top: 15px;
 }
 
 /*================================= nav bar ====================================== */
@@ -33,8 +36,8 @@ main {
   align-items: center;
   justify-content: space-evenly;
   flex-flow: column;
-  height: 60vh;
-  margin-top: 19vh;
+  height: 65vh;
+  margin-top: 22vh;
 }
 
 h1 {
@@ -51,22 +54,30 @@ h2 {
   font-weight: 400;
   text-align: center;
   width: 60vw;
-  font-size: 14pt;
+  font-size: 13pt;
   margin: 0;
-  line-height: 5vh;
+  line-height: 3.5vh;
 }
 
 img.home {
-  width: 75%;
+  width: 90%;
   justify-self: center;
 }
-/*================================= footer styles =================================*/
+/*================================= homepage footer styles =================================*/
 footer {
     width: 100%;
     min-height: 30px;
     text-align: center;
     position: absolute;
     bottom: .5vh;
+  }
+
+  img.jump {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 85px;
+    z-index: -1;
   }
   
   footer .copyright {
@@ -109,6 +120,104 @@ footer {
     background-image: url(images/social/medium.png);
   }
   
+/*================================= ProjectPage styles =================================*/
+
+img#home-plant-2{
+  position: absolute;
+  height: 165px;
+  left: -30px;
+  top: 15px;
+}
+
+div#project-collection {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+img.thumbnail {
+  width: 70%;
+}
+
+div#project-collection h1 {
+  margin: 10vh auto 9vh auto;
+}
+
+div.project h2 {
+  margin: auto;
+  font-weight: 700;
+  font-size: 15pt;
+  margin: 10px auto;
+}
+
+div.project p {
+  width: 70%;
+  margin: auto;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+}
+
+div.project ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px auto;
+  width: 70%;
+}
+
+div.project li.lang {
+  display: inline-block;
+  background-color: #f5a83f;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  padding: 4px;
+  border-radius: 5%;
+  margin: 3px;
+}
+
+li.lang:nth-child(even) {
+  background-color: #49ACB7;
+}
+
+div.project {
+  margin-bottom: 50px;
+}
+
+div.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 10px;
+}
+
+button:hover {
+  opacity: 70%;
+}
+
+button.github {
+  background-image: url(./images/social/github.png);
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+button.demo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  background-color: #d0690d;
+  border: none;
+  color: #ffffff;
+  padding: 6px;
+  border-radius: 10%;
+}
 
 /*================================= tablet breakpoint =================================*/
 
