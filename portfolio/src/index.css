@@ -12,18 +12,17 @@ img#home-plant {
 
 /*================================= nav bar ====================================== */
 
-nav {
-  background-image: url("images/menu-button.png");
-  background-size: cover;
+#nav, img.menu {
   height: 50px;
   width: 50px;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 15px;
 }
 
-nav a {
-  display: none;
+a {
+  text-decoration: none;
+  color: #000000;
 }
 
 /*================================= header styles =================================*/
@@ -139,6 +138,7 @@ div#project-collection {
 
 img.thumbnail {
   width: 70%;
+  margin: 0 auto;
 }
 
 div#project-collection h1 {
@@ -148,7 +148,7 @@ div#project-collection h1 {
 div.project h2 {
   margin: auto;
   font-weight: 700;
-  font-size: 15pt;
+  font-size: 12pt;
   margin: 10px auto;
 }
 
@@ -156,7 +156,8 @@ div.project p {
   width: 70%;
   margin: auto;
   font-family: 'Raleway', sans-serif;
-  text-align: left;
+  text-align: justify;
+  font-size: 9pt;
 }
 
 div.project ul {
@@ -168,21 +169,29 @@ div.project ul {
 
 div.project li.lang {
   display: inline-block;
-  background-color: #f5a83f;
   color: #ffffff;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   padding: 4px;
   border-radius: 5%;
   margin: 3px;
+  font-size: 8pt;
 }
 
 li.lang:nth-child(even) {
   background-color: #49ACB7;
 }
 
+li.lang:nth-child(odd) {
+  background-color: #f5a83f;
+}
+
 div.project {
   margin-bottom: 50px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 95%;
 }
 
 div.button-wrapper {
